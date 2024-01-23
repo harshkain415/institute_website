@@ -57,6 +57,12 @@ a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
 }
+.flex{
+  display:flex;
+  justify-content:space-around;
+  /* justify-content: center; */
+  align-items:center;
+}
 
 p {
   margin-bottom: 20px;
@@ -90,7 +96,7 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 1001;
 }
 .fh5co-nav .top-menu {
-  padding: 22px 0;
+  padding: 15px 0;
 }
 .fh5co-nav .top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -102,10 +108,31 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 5px 12px;
 }
+.responsive-image {
+  max-width: 80%;
+  height: auto;
+  /* background-color: red; */
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-nav .top .num, .fh5co-nav .top .fh5co-social, .fh5co-nav .top .site {
     padding: 5px 10px;
   }
+  .responsive-image {
+    max-width: 90%;
+    height: auto;
+    /* background-color: red; */
+  }
+  .flex{
+    display: block;
+  }
+  
+}
+.courseImage{
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .fh5co-nav .top .site {
   float: left;
@@ -161,6 +188,12 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   top: 5px;
   left: 0;
+}
+.fh5co .menu-1{
+  /* display:flex;
+  justify-content:center;
+  align-items:center; */
+  
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
